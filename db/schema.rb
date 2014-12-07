@@ -14,6 +14,9 @@
 ActiveRecord::Schema.define(version: 20141127012203) do
 
   create_table "services", force: true do |t|
+    t.string   "make"
+    t.string   "model"
+    t.integer  "year"
     t.string   "service_type"
     t.date     "date"
     t.decimal  "price",        precision: 8, scale: 2
