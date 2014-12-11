@@ -29,6 +29,10 @@ gem 'rspec-rails'
 gem 'guard-bundler'
 gem 'guard-rspec'
 gem 'factory_girl_rails'
+gem 'bootstrap-generators'
+gem 'launchy'
+gem 'byebug'
+
 group :test, :darwin, :development do
   # gem 'ruby-gntp'
 end

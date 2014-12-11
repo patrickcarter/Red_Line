@@ -1,1 +1,24 @@
+<h1>Red Line llc Scheduled Drop-offs</h1>
+
+<table id='my_services'>
+  <tr>
+    <th> Make </th>
+    <th> Model </th>
+    <th> Year </th>
+    <th> Service Type </th>
+    <th> Date </th>
+  </tr>
+  <% @services.each do |service| %>
+  <tr>
+    <td><%=service.make %></td>
+    <td><%=service.model %></td>
+    <td><%=service.year %></td>
+    <td><%=service.service_type %></td>
+    <td><%=service.date %></td>
+    <td><%= link_to('Edit', edit_service_path(service)) %></td>
+
+  </tr>
+  <% end %>
+</table>
+
 <%= link_to 'New Service', new_service_path %>

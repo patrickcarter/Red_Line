@@ -1,0 +1,29 @@
+<%= form_for(@service) do |form| %>
+  <p>
+    <%= form.label :make %>
+    <%= form.text_field :make %>
+  </p>
+  <p>
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </p>
+  <p>
+    <%= form.label :year %>
+    <%= form.text_field :year %>
+  </p>
+  <p>
+    <%= form.label :service_type %>
+    <%= form.text_field :service_type %>
+  </p>
+  <p>
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </p>
+  <p>
+    <%= form.label :Price %>
+    $70 per hour plus parts
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
