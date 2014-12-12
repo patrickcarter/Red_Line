@@ -1,13 +1,14 @@
 require 'rails_helper'
 
 feature 'Editing Services' do
-  scenario 'can edit a service'
-    Service.create(
+  scenario 'can edit a service' do
+    service = Service.create(
       make: 'Yamaha',
       model: 'quad',
       year: '2014',
       service_type: 'Oil Change',
-      date: '2014-12-25'
+      date: '2014-12-25',
+      price: '$70 per hour plus parts'
     )
 
     visit '/'
@@ -33,3 +34,4 @@ feature 'Editing Services' do
 
     end
   end
+end

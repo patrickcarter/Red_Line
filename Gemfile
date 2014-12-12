@@ -30,7 +30,7 @@ gem 'guard-bundler'
 gem 'guard-rspec'
 gem 'factory_girl_rails'
 gem 'bootstrap-generators'
-gem 'launchy'
+gem 'bcrypt'
 gem 'byebug'
 
 group :test, :darwin, :development do
@@ -39,6 +39,8 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'launchy'
+  gem 'shoulda-matchers'
 end
 
 # Use jquery as the JavaScript library
