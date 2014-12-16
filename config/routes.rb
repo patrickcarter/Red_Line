@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   resources :services
 
+  resources :users,
+    only: [:new, :create],
+    path_names: { new: 'signup' }
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
