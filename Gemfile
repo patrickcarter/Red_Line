@@ -33,8 +33,8 @@ gem 'bootstrap-generators'
 gem 'bcrypt'
 gem 'byebug'
 
-group :test, :darwin, :development do
-  # gem 'ruby-gntp'
+group :test, :development do
+  gem 'faker'
 end
 
 group :test do
