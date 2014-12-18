@@ -2,7 +2,7 @@ class ServicesController < ApplicationController
   before_action :find_service, only: [:edit, :update]
 
   def index
-    @services = Service.all
+    @services = Service.all.paginate(page: params[:page])
   end
 
   def edit
